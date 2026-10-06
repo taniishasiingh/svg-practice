@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A pelican riding a bicycle under a starry night sky">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1e3d"/>
+      <stop offset="70%" stop-color="#274070"/>
+      <stop offset="100%" stop-color="#3d5a80"/>
+    </linearGradient>
+    <radialGradient id="beam" cx="0%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#fff9c4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#fff9c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#night)"/>
+  <circle cx="660" cy="90" r="34" fill="#fdf6d8"/>
+  <circle cx="648" cy="82" r="6" fill="#e8dfba"/>
+  <circle cx="672" cy="100" r="4" fill="#e8dfba"/>
+  <g fill="#ffffff">
+    <circle cx="80" cy="70" r="2.5"/><circle cx="200" cy="130" r="2"/>
+    <circle cx="320" cy="60" r="2.5"/><circle cx="440" cy="140" r="2"/>
+    <circle cx="540" cy="50" r="2.5"/><circle cx="140" cy="220" r="2"/>
+    <circle cx="390" cy="230" r="2"/><circle cx="720" cy="200" r="2.5"/>
+  </g>
+
+  <path d="M 0 480 Q 180 400 340 470 T 800 460 V 600 H 0 Z" fill="#1c2a4a"/>
+  <rect y="500" width="800" height="100" fill="#20242e"/>
+  <line x1="0" y1="550" x2="800" y2="550" stroke="#c9c9b8" stroke-width="4" stroke-dasharray="40 30" opacity="0.7"/>
+
+  <!-- headlight beam -->
+  <path d="M 600 280 L 780 340 L 780 430 L 600 320 Z" fill="url(#beam)"/>
+
+  <g>
+    <circle cx="270" cy="450" r="52" fill="none" stroke="#15161c" stroke-width="10"/>
+    <circle cx="580" cy="450" r="52" fill="none" stroke="#15161c" stroke-width="10"/>
+    <g stroke="#6b7280" stroke-width="2">
+      <line x1="270" y1="406" x2="270" y2="494"/><line x1="226" y1="450" x2="314" y2="450"/>
+      <line x1="580" y1="406" x2="580" y2="494"/><line x1="536" y1="450" x2="624" y2="450"/>
+    </g>
+    <g fill="none" stroke="#38bdf8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 270 450 L 370 330 L 500 330 L 580 450"/>
+      <path d="M 370 330 L 425 450 L 270 450"/>
+      <path d="M 425 450 L 500 330"/>
+    </g>
+    <path d="M 352 326 q 20 -14 44 -4 q -6 12 -24 12 q -14 0 -20 -8 Z" fill="#4a2c14"/>
+    <path d="M 500 330 L 512 292 M 512 292 q 2 -12 14 -12 h 20 q 12 0 12 12" fill="none" stroke="#15161c" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="558" cy="292" r="8" fill="#15161c"/>
+    <circle cx="606" cy="292" r="7" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+    <circle cx="425" cy="450" r="15" fill="none" stroke="#6b7280" stroke-width="4"/>
+    <line x1="425" y1="450" x2="425" y2="478" stroke="#6b7280" stroke-width="6" stroke-linecap="round"/>
+    <rect x="408" y="475" width="34" height="9" rx="4" fill="#15161c"/>
+  </g>
+
+  <!-- pelican -->
+  <g>
+    <ellipse cx="400" cy="290" rx="62" ry="40" fill="#f5f0e6" stroke="#d9cfba" stroke-width="2"/>
+    <path d="M 450 272 C 462 244 472 228 486 218" fill="none" stroke="#f5f0e6" stroke-width="20" stroke-linecap="round"/>
+    <ellipse cx="498" cy="212" rx="22" ry="18" fill="#f5f0e6" stroke="#d9cfba" stroke-width="2"/>
+    <path d="M 516 208 C 546 205 574 210 588 218 C 595 222 590 228 581 227 C 560 228 538 222 516 216 Z" fill="#f6a62b" stroke="#d67f0e" stroke-width="1.5"/>
+    <circle cx="504" cy="206" r="3.4" fill="#222"/>
+    <path d="M 425 326 L 438 380 L 424 424" fill="none" stroke="#e8890c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 380 326 L 405 380 L 424 478" fill="none" stroke="#e8890c" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="340" cy="285" rx="26" ry="14" fill="#e6ddca" transform="rotate(-18 340 285)"/>
+    <!-- scarf -->
+    <path d="M 470 238 q 20 12 44 8 l 6 10 q -26 4 -48 -8 Z" fill="#ef4444"/>
+    <path d="M 512 246 q 14 14 12 34 l -12 2 q -2 -20 -10 -30 Z" fill="#ef4444"/>
+  </g>
+</svg>

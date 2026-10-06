@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 800 600" width="800" height="600" role="img"
+     aria-label="Retro travel-poster style pelican riding a penny-farthing bicycle">
+  <defs>
+    <g id="spoke">
+      <line x1="-86" y1="0" x2="86" y2="0" stroke="#8a7358" stroke-width="2"/>
+    </g>
+
+    <g id="frameTubes" fill="none">
+      <path d="M 250 466 L 400 452"/>
+      <path d="M 375 352 L 400 452"/>
+      <path d="M 375 352 C 470 336 542 360 600 410"/>
+      <path d="M 600 410 C 606 366 606 326 582 306"/>
+      <path d="M 582 306 L 548 300"/>
+    </g>
+  </defs>
+
+  <!-- ===== poster ground ===== -->
+  <rect width="800" height="600" fill="#f4e7d3"/>
+
+  <g transform="translate(-478 0)">
+    <circle cx="640" cy="132" r="112" fill="#e4a03c" opacity="0.18"/>
+    <circle cx="640" cy="132" r="86" fill="#e4a03c"/>
+    <circle cx="640" cy="132" r="52" fill="#f0b458"/>
+    <circle cx="640" cy="132" r="112" fill="none" stroke="#e4a03c" stroke-width="12"
+            stroke-dasharray="7 24" opacity="0.75"/>
+    <circle cx="640" cy="132" r="72" fill="none" stroke="#f6cf94" stroke-width="6"
+            stroke-dasharray="5 20"/>
+  </g>
+
+  <g fill="none" stroke="#2e2a26" stroke-width="4" stroke-linecap="round"
+     transform="translate(508 -46)">
+    <path d="M 108 128 q 11 -11 22 0 q 11 -11 22 0"/>
+    <path d="M 176 176 q 8 -8 16 0 q 8 -8 16 0"/>
+    <path d="M 62 196 q 7 -7 14 0 q 7 -7 14 0"/>
+  </g>
+
+  <path d="M 0 500 Q 140 404 286 468 T 566 448 T 800 484 V 500 H 0 Z" fill="#a9c0a7"/>
+  <path d="M 0 500 Q 210 442 388 492 T 800 472 V 500 H 0 Z" fill="#6e8f73"/>
+
+  <rect y="500" width="800" height="72" fill="#3c3833"/>
+  <line x1="0" y1="536" x2="800" y2="536" stroke="#f4e7d3" stroke-width="5"
+        stroke-dasharray="36 28" opacity="0.85"/>
+  <rect y="572" width="800" height="28" fill="#d9c3a1"/>
+
+  <g stroke="#4f6f55" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M 34 500 q 3 -16 11 -22"/>
+    <path d="M 46 500 q 8 -15 18 -19"/>
+    <path d="M 738 500 q -3 -16 -11 -22"/>
+    <path d="M 752 500 q -9 -14 -19 -18"/>
+  </g>
+
+  <!-- ===== penny-farthing ===== -->
+  <g id="bicycle" transform="translate(-52 0)">
+    <!-- high front wheel -->
+    <circle cx="600" cy="410" r="90" fill="none" stroke="#2e2a26" stroke-width="13"/>
+    <g transform="translate(600 410)">
+      <use xlink:href="#spoke" href="#spoke"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(22.5)"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(45)"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(67.5)"/>
+      <circle r="10" fill="#2e2a26"/>
+    </g>
+
+    <!-- rear wheel -->
+    <circle cx="250" cy="466" r="34" fill="none" stroke="#2e2a26" stroke-width="10"/>
+    <g stroke="#8a7358" stroke-width="2">
+      <line x1="224" y1="466" x2="276" y2="466"/>
+      <line x1="250" y1="440" x2="250" y2="492"/>
+      <line x1="230" y1="446" x2="270" y2="486"/>
+    </g>
+    <circle cx="250" cy="466" r="7" fill="#2e2a26"/>
+
+    <!-- chain + chainring -->
+    <circle cx="400" cy="452" r="17" fill="none" stroke="#8a7358" stroke-width="3"/>
+    <circle cx="400" cy="452" r="6" fill="#2e2a26"/>
+    <path d="M 385 441 L 258 459 M 385 463 L 258 473" fill="none" stroke="#8a7358" stroke-width="2.5"/>
+
+    <!-- frame -->
+    <use xlink:href="#frameTubes" href="#frameTubes" stroke="#2e2a26" stroke-width="16"
+         stroke-linecap="round" stroke-linejoin="round"/>
+    <use xlink:href="#frameTubes" href="#frameTubes" stroke="#2f7d74" stroke-width="9"
+         stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- saddle -->
+    <path d="M 330 348 q 4 -14 24 -14 q 24 0 30 10 q -4 12 -26 12 q -22 0 -28 -8 Z"
+          fill="#5a3a1c" stroke="#2e2a26" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- grip -->
+    <rect x="528" y="292" width="32" height="13" rx="6.5" fill="#2e2a26"
+          transform="rotate(-10 544 298)"/>
+
+    <!-- cranks + pedals -->
+    <g stroke="#2e2a26" stroke-width="7" stroke-linecap="round">
+      <line x1="400" y1="452" x2="382" y2="428"/>
+      <line x1="400" y1="452" x2="418" y2="478"/>
+    </g>
+    <rect x="364" y="423" width="36" height="11" rx="4" fill="#2e2a26"/>
+    <rect x="400" y="473" width="36" height="11" rx="4" fill="#2e2a26"/>
+  </g>
+
+  <!-- ===== pelican ===== -->
+  <g id="pelican" transform="translate(-52 0)" stroke="#2e2a26" stroke-width="5" stroke-linejoin="round">
+    <!-- tail -->
+    <g fill="#efe6d6">
+      <ellipse cx="316" cy="300" rx="44" ry="14" transform="rotate(-24,316,300)"/>
+      <ellipse cx="320" cy="284" rx="36" ry="12" transform="rotate(-42,320,284)"/>
+      <ellipse cx="314" cy="316" rx="36" ry="12" transform="rotate(-4,314,316)"/>
+    </g>
+
+    <!-- far leg -->
+    <path d="M 392 336 L 366 392 L 380 422" fill="none" stroke="#e07b18" stroke-width="9"
+          stroke-linecap="round"/>
+    <path d="M 380 430 q -18 -3 -20 4 q 11 6 20 2 q 10 4 20 -2 q -3 -7 -20 -4 Z"
+          fill="#ef8a1c"/>
+
+    <!-- body -->
+    <ellipse cx="412" cy="300" rx="62" ry="46" fill="#fbf7ef"/>
+    <path d="M 372 336 q 42 20 84 2" fill="none" stroke="#d8cdb8" stroke-width="3"/>
+
+    <!-- near leg -->
+    <path d="M 440 342 L 468 410 L 418 470" fill="none" stroke="#f59320" stroke-width="10"
+          stroke-linecap="round"/>
+    <path d="M 418 478 q -20 -3 -22 4 q 12 7 22 3 q 10 4 22 -3 q -3 -8 -22 -4 Z"
+          fill="#f59a24"/>
+
+    <!-- neck -->
+    <path d="M 456 292 C 470 260 480 244 496 232" fill="none" stroke="#2e2a26"
+          stroke-width="30" stroke-linecap="round"/>
+    <path d="M 456 292 C 470 260 480 244 496 232" fill="none" stroke="#fbf7ef"
+          stroke-width="20" stroke-linecap="round"/>
+
+    <!-- head -->
+    <ellipse cx="515" cy="232" rx="30" ry="26" fill="#fbf7ef"/>
+
+    <!-- crest -->
+    <g fill="#fbf7ef">
+      <path d="M 500 212 C 494 200 497 191 503 186 C 506 195 507 204 509 213 Z"/>
+      <path d="M 512 209 C 511 196 516 187 523 184 C 522 195 518 204 520 213 Z"/>
+      <path d="M 524 212 C 528 202 535 197 542 197 C 538 206 532 212 531 219 Z"/>
+    </g>
+
+    <!-- eye -->
+    <circle cx="527" cy="226" r="7.5" fill="#fbf7ef" stroke-width="3.5"/>
+    <circle cx="528" cy="226" r="4.2" fill="#2e2a26" stroke="none"/>
+    <circle cx="529.6" cy="224.4" r="1.5" fill="#fbf7ef" stroke="none"/>
+
+    <!-- upper mandible -->
+    <path d="M 538 232 C 578 225 614 229 640 237 C 652 241 650 250 636 249
+             C 606 249 572 244 538 241 Z" fill="#f0913a"/>
+    <path d="M 546 236 C 578 232 614 234 634 239" fill="none" stroke="#ffd9a8"
+          stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="552" cy="234" rx="4" ry="2.2" fill="#c96a10" stroke="none"/>
+
+    <!-- gular pouch -->
+    <path d="M 538 241 C 562 252 588 264 614 275 C 626 280 632 290 626 296
+             C 620 302 608 298 596 292 C 570 280 550 264 536 253 Z" fill="#de7526"/>
+    <path d="M 548 254 C 566 264 584 275 602 283" fill="none" stroke="#c96a10" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- fish in the pouch -->
+    <g transform="translate(586 280) rotate(14)" stroke-width="3.5">
+      <path d="M 12 0 L 25 -8 L 25 8 Z" fill="#6fc3e8"/>
+      <ellipse cx="0" cy="0" rx="15" ry="7" fill="#9adcf5"/>
+      <circle cx="-7" cy="-1" r="1.8" fill="#2e2a26" stroke="none"/>
+    </g>
+
+    <!-- far wing -->
+    <path d="M 442 272 C 484 252 528 262 552 280 C 560 286 556 296 546 294
+             C 512 284 476 280 442 288 Z" fill="#ddd2be"/>
+
+    <!-- near wing gripping the handlebar -->
+    <path d="M 440 274 C 482 250 528 262 560 284 C 572 292 574 302 566 306
+             C 560 309 552 304 544 300 C 510 288 476 282 440 290 Z" fill="#fbf7ef"/>
+    <g fill="none" stroke="#d8cdb8" stroke-width="3" stroke-linecap="round">
+      <path d="M 452 280 C 488 268 528 278 556 296"/>
+      <path d="M 454 288 C 490 276 528 286 556 302"/>
+    </g>
+    <path d="M 546 286 C 560 290 570 298 570 305 C 566 311 556 309 548 303
+             C 540 298 540 288 546 286 Z" fill="#e4dac6"/>
+  </g>
+
+  <!-- ===== foreground ===== -->
+  <g stroke="#4f6f55" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M 54 600 q 6 -24 18 -32"/>
+    <path d="M 74 600 q 14 -22 28 -28"/>
+    <path d="M 706 600 q -6 -24 -18 -32"/>
+    <path d="M 726 600 q -14 -22 -28 -28"/>
+  </g>
+</svg>

@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 800 600" width="800" height="600" role="img"
+     aria-label="Two pelicans riding a tandem bicycle along the coast">
+  <defs>
+    <g id="tsSpoke">
+      <line x1="-44" y1="0" x2="44" y2="0" stroke="#9aa3b0" stroke-width="2"/>
+    </g>
+    <g id="tandemFrame" fill="none">
+      <path d="M 215 450 L 330 448"/>
+      <path d="M 330 448 L 300 358"/>
+      <path d="M 215 450 L 300 358"/>
+      <path d="M 330 448 L 460 448"/>
+      <path d="M 460 448 L 438 354"/>
+      <path d="M 300 358 L 438 354"/>
+      <path d="M 330 448 L 560 342"/>
+      <path d="M 460 448 L 560 342"/>
+      <path d="M 560 342 L 572 376"/>
+      <path d="M 572 376 L 585 450"/>
+    </g>
+    <g id="tWheel">
+      <circle r="54" fill="none" stroke="#2b3440" stroke-width="11"/>
+      <circle r="44" fill="none" stroke="#c9cfd8" stroke-width="4"/>
+      <use xlink:href="#tsSpoke" href="#tsSpoke"/>
+      <use xlink:href="#tsSpoke" href="#tsSpoke" transform="rotate(45)"/>
+      <use xlink:href="#tsSpoke" href="#tsSpoke" transform="rotate(90)"/>
+      <use xlink:href="#tsSpoke" href="#tsSpoke" transform="rotate(135)"/>
+      <circle r="9" fill="#2b3440"/>
+    </g>
+    <g id="tCrank">
+      <circle r="17" fill="none" stroke="#2b3440" stroke-width="4"/>
+      <circle r="6" fill="#2b3440"/>
+    </g>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="600" fill="#bfe6f5"/>
+  <circle cx="668" cy="96" r="44" fill="#ffe28a"/>
+  <g fill="#ffffff" opacity="0.95">
+    <ellipse cx="160" cy="90" rx="54" ry="22"/>
+    <ellipse cx="198" cy="80" rx="40" ry="18"/>
+    <ellipse cx="450" cy="140" rx="44" ry="18"/>
+  </g>
+
+  <!-- lighthouse -->
+  <g transform="translate(88 196)">
+    <path d="M -26 220 L -14 90 L 14 90 L 26 220 Z" fill="#f5f0e6" stroke="#8b8578"
+          stroke-width="4" stroke-linejoin="round"/>
+    <g fill="#e05b3a">
+      <rect x="-21" y="150" width="42" height="18"/>
+      <rect x="-17" y="112" width="34" height="18"/>
+    </g>
+    <rect x="-16" y="60" width="32" height="32" fill="#3a4756" stroke="#232c38"
+          stroke-width="4"/>
+    <rect x="-8" y="66" width="16" height="18" fill="#ffedb0"/>
+    <path d="M -22 60 L 0 34 L 22 60 Z" fill="#e05b3a" stroke="#8b3226" stroke-width="3"
+          stroke-linejoin="round"/>
+    <rect x="-4" y="194" width="16" height="26" rx="4" fill="#6b4a2f"/>
+  </g>
+
+  <!-- sea + beach -->
+  <rect y="416" width="800" height="64" fill="#3fa7c4"/>
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <path d="M 220 442 q 20 -12 40 0 q 20 -12 40 0"/>
+    <path d="M 420 460 q 20 -12 40 0 q 20 -12 40 0"/>
+    <path d="M 620 440 q 20 -12 40 0 q 20 -12 40 0"/>
+  </g>
+  <path d="M 0 480 Q 200 458 420 478 T 800 466 L 800 480 L 0 480 Z" fill="#f2e3c2"/>
+
+  <!-- road -->
+  <rect y="480" width="800" height="92" fill="#3c3833"/>
+  <line x1="0" y1="522" x2="800" y2="522" stroke="#f4e7d3" stroke-width="5"
+        stroke-dasharray="36 28" opacity="0.85"/>
+  <rect y="572" width="800" height="28" fill="#d9c3a1"/>
+
+  <!-- speed lines -->
+  <g fill="none" stroke="#7fa8c2" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <path d="M 30 300 Q 80 316 106 330"/>
+    <path d="M 18 350 Q 70 362 100 370"/>
+  </g>
+
+  <!-- ===== tandem ===== -->
+  <g id="tandem">
+    <use xlink:href="#tWheel" href="#tWheel" x="215" y="450"/>
+    <use xlink:href="#tWheel" href="#tWheel" x="585" y="450"/>
+
+    <use xlink:href="#tCrank" href="#tCrank" x="330" y="448"/>
+    <use xlink:href="#tCrank" href="#tCrank" x="460" y="448"/>
+    <g stroke="#9aa3b0" stroke-width="2.5">
+      <path d="M 315 437 L 224 442 M 315 459 L 224 458" fill="none"/>
+    </g>
+    <circle cx="215" cy="450" r="10" fill="#4a4a4a"/>
+
+    <use xlink:href="#tandemFrame" href="#tandemFrame" stroke="#2b3440"
+         stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <use xlink:href="#tandemFrame" href="#tandemFrame" stroke="#8b5cf6"
+         stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- saddles -->
+    <rect x="266" y="346" width="66" height="15" rx="7.5" fill="#4a2c14"
+          stroke="#2b3440" stroke-width="4"/>
+    <rect x="404" y="342" width="66" height="15" rx="7.5" fill="#4a2c14"
+          stroke="#2b3440" stroke-width="4"/>
+
+    <!-- stem + bars -->
+    <g fill="none" stroke="#2b3440" stroke-width="8" stroke-linecap="round"
+       stroke-linejoin="round">
+      <path d="M 560 342 L 562 310"/>
+      <path d="M 562 310 Q 574 302 590 306"/>
+    </g>
+    <rect x="582" y="298" width="30" height="13" rx="6.5" fill="#2b3440"
+          transform="rotate(10 597 304)"/>
+
+    <!-- crank arms + pedals -->
+    <g stroke="#2b3440" stroke-width="7" stroke-linecap="round">
+      <line x1="330" y1="448" x2="312" y2="424"/>
+      <line x1="330" y1="448" x2="348" y2="472"/>
+      <line x1="460" y1="448" x2="442" y2="424"/>
+      <line x1="460" y1="448" x2="478" y2="472"/>
+    </g>
+    <rect x="294" y="419" width="36" height="11" rx="4" fill="#2b3440"/>
+    <rect x="330" y="467" width="36" height="11" rx="4" fill="#2b3440"/>
+    <rect x="424" y="419" width="36" height="11" rx="4" fill="#2b3440"/>
+    <rect x="460" y="467" width="36" height="11" rx="4" fill="#2b3440"/>
+  </g>
+
+  <!-- ===== rear pelican ===== -->
+  <g id="rearPelican">
+    <g fill="#e8edf2" stroke="#2b3440" stroke-width="4" stroke-linejoin="round">
+      <ellipse cx="252" cy="300" rx="40" ry="13" transform="rotate(-24,252,300)"/>
+      <ellipse cx="256" cy="282" rx="32" ry="11" transform="rotate(-44,256,282)"/>
+      <ellipse cx="250" cy="318" rx="32" ry="11" transform="rotate(-4,250,318)"/>
+    </g>
+    <path d="M 360 304 C 392 287 426 291 446 303 C 454 309 450 319 440 317
+             C 412 309 384 305 360 310 Z" fill="#d7dee6" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 316 344 L 300 382 L 312 418" fill="none" stroke="#e07b18"
+          stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 312 426 q -19 -3 -21 4 q 12 6 21 2 q 10 4 21 -2 q -3 -7 -21 -4 Z"
+          fill="#ef8a1c" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+    <ellipse cx="320" cy="306" rx="58" ry="46" fill="#f4f6f8" stroke="#2b3440"
+             stroke-width="5"/>
+    <path d="M 352 348 L 372 406 L 348 464" fill="none" stroke="#f59320"
+          stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 348 472 q -20 -3 -22 4 q 12 7 22 3 q 10 4 22 -3 q -3 -8 -22 -4 Z"
+          fill="#f59a24" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 362 294 C 376 266 386 250 400 240" fill="none" stroke="#2b3440"
+          stroke-width="27" stroke-linecap="round"/>
+    <path d="M 362 294 C 376 266 386 250 400 240" fill="none" stroke="#f4f6f8"
+          stroke-width="17" stroke-linecap="round"/>
+    <ellipse cx="416" cy="234" rx="26" ry="23" fill="#f4f6f8" stroke="#2b3440"
+             stroke-width="5"/>
+    <g fill="#f4f6f8" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M 400 216 C 394 205 397 196 403 191 C 406 200 407 209 409 218 Z"/>
+      <path d="M 412 213 C 411 201 416 192 423 189 C 422 200 418 209 420 218 Z"/>
+    </g>
+    <circle cx="428" cy="228" r="7" fill="#ffffff" stroke="#2b3440" stroke-width="3.5"/>
+    <circle cx="429" cy="228" r="4" fill="#2b3440"/>
+    <path d="M 439 226 C 470 219 496 220 510 227 C 519 231 515 239 505 238
+             C 483 237 460 232 439 232 Z" fill="#ff9f2e" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 439 232 C 466 242 490 253 504 261 C 512 265 512 273 504 274
+             C 496 275 486 269 476 263 C 461 254 449 244 437 238 Z"
+          fill="#f5791f" stroke="#2b3440" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 390 292 C 414 278 448 278 466 290" fill="none" stroke="#d7dee6"
+          stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== front pelican ===== -->
+  <g id="frontPelican">
+    <path d="M 480 336 C 516 318 556 322 576 336 C 584 342 580 352 570 350
+             C 540 342 508 338 480 342 Z" fill="#d7dee6" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 446 338 L 430 376 L 442 416" fill="none" stroke="#e07b18"
+          stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 442 424 q -19 -3 -21 4 q 12 6 21 2 q 10 4 21 -2 q -3 -7 -21 -4 Z"
+          fill="#ef8a1c" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+    <ellipse cx="452" cy="300" rx="58" ry="46" fill="#ffffff" stroke="#2b3440"
+             stroke-width="5"/>
+    <path d="M 484 342 L 504 400 L 478 462" fill="none" stroke="#f59320"
+          stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 478 470 q -20 -3 -22 4 q 12 7 22 3 q 10 4 22 -3 q -3 -8 -22 -4 Z"
+          fill="#f59a24" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 496 288 C 510 260 520 244 534 234" fill="none" stroke="#2b3440"
+          stroke-width="27" stroke-linecap="round"/>
+    <path d="M 496 288 C 510 260 520 244 534 234" fill="none" stroke="#ffffff"
+          stroke-width="17" stroke-linecap="round"/>
+    <ellipse cx="550" cy="228" rx="26" ry="23" fill="#ffffff" stroke="#2b3440"
+             stroke-width="5"/>
+    <g fill="#ffffff" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M 534 210 C 528 199 531 190 537 185 C 540 194 541 203 543 212 Z"/>
+      <path d="M 546 207 C 545 195 550 186 557 183 C 556 194 552 203 554 212 Z"/>
+    </g>
+    <circle cx="562" cy="222" r="7" fill="#ffffff" stroke="#2b3440" stroke-width="3.5"/>
+    <circle cx="563" cy="222" r="4" fill="#2b3440"/>
+    <path d="M 573 220 C 610 213 648 215 672 223 C 682 227 678 235 666 234
+             C 636 233 602 228 573 226 Z" fill="#ff9f2e" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 573 226 C 602 236 630 248 656 258 C 666 262 669 271 660 272
+             C 651 274 639 267 627 259 C 605 245 587 234 571 230 Z"
+          fill="#f5791f" stroke="#2b3440" stroke-width="4" stroke-linejoin="round"/>
+    <g transform="translate(624 251) rotate(14)" stroke="#2b3440" stroke-width="3.5"
+       stroke-linejoin="round">
+      <path d="M 12 0 L 25 -8 L 25 8 Z" fill="#6fc3e8"/>
+      <ellipse cx="0" cy="0" rx="15" ry="7" fill="#9adcf5"/>
+      <circle cx="-7" cy="-1" r="1.8" fill="#2b3440" stroke="none"/>
+    </g>
+    <path d="M 522 314 C 544 300 570 300 592 310 C 600 314 596 322 588 322
+             C 566 316 542 312 522 318 Z" fill="#ffffff" stroke="#2b3440"
+          stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <g stroke="#5e8a55" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M 46 600 q 8 -26 20 -34"/>
+    <path d="M 66 600 q 16 -24 32 -30"/>
+    <path d="M 726 600 q -8 -26 -20 -34"/>
+    <path d="M 746 600 q -16 -24 -32 -30"/>
+  </g>
+</svg>

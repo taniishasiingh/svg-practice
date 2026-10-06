@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 800 600" width="800" height="600" role="img"
+     aria-label="Pelican wearing a helmet riding a mountain bike on a forest trail">
+  <defs>
+    <g id="spoke">
+      <line x1="-44" y1="0" x2="44" y2="0" stroke="#9aa3b0" stroke-width="2"/>
+    </g>
+    <g id="mtbFrame" fill="none">
+      <path d="M 250 440 L 366 436"/>
+      <path d="M 366 436 L 336 356"/>
+      <path d="M 250 440 L 336 356"/>
+      <path d="M 366 436 L 452 350"/>
+      <path d="M 336 356 L 452 350"/>
+      <path d="M 452 350 L 470 384"/>
+      <path d="M 470 384 L 486 424"/>
+    </g>
+    <g id="pine">
+      <rect x="-7" y="-8" width="14" height="34" fill="#7a5230"/>
+      <path d="M 0 -104 L 40 -44 L 20 -44 L 46 4 L -46 4 L -20 -44 L -40 -44 Z" fill="#3f7a4e"/>
+      <path d="M 0 -104 L 40 -44 L 0 -44 Z" fill="#549a62"/>
+    </g>
+    <g id="wheel">
+      <circle r="54" fill="none" stroke="#2b3440" stroke-width="11"/>
+      <circle r="44" fill="none" stroke="#c9cfd8" stroke-width="4"/>
+      <use xlink:href="#spoke" href="#spoke"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(45)"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(90)"/>
+      <use xlink:href="#spoke" href="#spoke" transform="rotate(135)"/>
+      <circle r="9" fill="#2b3440"/>
+    </g>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="600" fill="#a8dcf0"/>
+  <circle cx="150" cy="110" r="46" fill="#ffe28a"/>
+  <g fill="#ffffff" opacity="0.95">
+    <ellipse cx="600" cy="96" rx="54" ry="22"/>
+    <ellipse cx="638" cy="86" rx="40" ry="18"/>
+    <ellipse cx="300" cy="60" rx="44" ry="18"/>
+  </g>
+
+  <!-- mountains -->
+  <path d="M 0 400 L 120 230 L 200 320 L 300 190 L 420 340 L 520 250 L 640 400 Z"
+        fill="#8fb4c9"/>
+  <path d="M 300 190 L 342 244 L 316 236 L 294 254 L 272 236 L 256 246 Z" fill="#f2f6f8"/>
+  <path d="M 120 230 L 152 272 L 130 266 L 112 280 L 94 266 Z" fill="#f2f6f8"/>
+  <path d="M 440 400 L 560 300 L 660 380 L 760 310 L 800 350 L 800 420 Z" fill="#7aa3ba"/>
+
+  <!-- pines -->
+  <g>
+    <use xlink:href="#pine" href="#pine" transform="translate(70 456) scale(1.15)"/>
+    <use xlink:href="#pine" href="#pine" transform="translate(150 462) scale(0.85)"/>
+    <use xlink:href="#pine" href="#pine" transform="translate(690 458) scale(1.25)"/>
+    <use xlink:href="#pine" href="#pine" transform="translate(770 464) scale(0.9)"/>
+    <use xlink:href="#pine" href="#pine" transform="translate(610 466) scale(0.7)"/>
+  </g>
+
+  <!-- trail -->
+  <path d="M 0 600 L 0 500 Q 200 470 420 492 T 800 478 L 800 600 Z" fill="#b9895a"/>
+  <path d="M 0 500 Q 200 470 420 492 T 800 478" fill="none" stroke="#96693f"
+        stroke-width="6"/>
+  <g fill="#8a6743" opacity="0.75">
+    <ellipse cx="90" cy="540" rx="26" ry="9"/>
+    <ellipse cx="300" cy="556" rx="34" ry="11"/>
+    <ellipse cx="560" cy="536" rx="28" ry="10"/>
+    <ellipse cx="730" cy="560" rx="30" ry="11"/>
+  </g>
+  <g fill="#7d8b7a">
+    <path d="M 640 500 q 16 -18 34 0 q -14 10 -34 0 Z"/>
+    <path d="M 150 528 q 14 -16 30 0 q -12 9 -30 0 Z"/>
+  </g>
+
+  <!-- motion lines -->
+  <g fill="none" stroke="#8fc4e8" stroke-width="5" stroke-linecap="round" opacity="0.8">
+    <path d="M 40 320 Q 96 336 130 350"/>
+    <path d="M 26 368 Q 84 380 124 390"/>
+    <path d="M 54 414 Q 104 420 140 420"/>
+  </g>
+
+  <!-- ===== mountain bike ===== -->
+  <g id="bike">
+    <use xlink:href="#wheel" href="#wheel" x="250" y="440"/>
+    <use xlink:href="#wheel" href="#wheel" x="486" y="440"/>
+
+    <!-- suspension fork -->
+    <g stroke="#2b3440" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 470 384 L 470 404"/>
+      <path d="M 452 350 L 486 424"/>
+    </g>
+    <rect x="459" y="396" width="22" height="9" rx="4" fill="#e05b3a" stroke="#2b3440"
+          stroke-width="3"/>
+
+    <!-- frame -->
+    <use xlink:href="#mtbFrame" href="#mtbFrame" stroke="#2b3440" stroke-width="16"
+         stroke-linecap="round" stroke-linejoin="round"/>
+    <use xlink:href="#mtbFrame" href="#mtbFrame" stroke="#1fb6a6" stroke-width="9"
+         stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- saddle -->
+    <path d="M 300 352 q 4 -14 26 -14 q 30 0 38 10 q -4 14 -30 14 q -28 0 -34 -10 Z"
+          fill="#4a2c14" stroke="#2b3440" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- handlebar -->
+    <g fill="none" stroke="#2b3440" stroke-width="8" stroke-linecap="round"
+       stroke-linejoin="round">
+      <path d="M 452 350 L 458 322"/>
+      <path d="M 458 322 Q 486 314 512 322"/>
+    </g>
+    <rect x="500" y="314" width="30" height="13" rx="6.5" fill="#2b3440"
+          transform="rotate(14 515 320)"/>
+
+    <!-- cranks + pedals -->
+    <circle cx="366" cy="436" r="17" fill="none" stroke="#2b3440" stroke-width="4"/>
+    <circle cx="366" cy="436" r="6" fill="#2b3440"/>
+    <g stroke="#2b3440" stroke-width="7" stroke-linecap="round">
+      <line x1="366" y1="436" x2="350" y2="412"/>
+      <line x1="366" y1="436" x2="382" y2="460"/>
+    </g>
+    <rect x="332" y="407" width="36" height="11" rx="4" fill="#2b3440"/>
+    <rect x="364" y="455" width="36" height="11" rx="4" fill="#2b3440"/>
+  </g>
+
+  <!-- ===== pelican ===== -->
+  <g id="pelican">
+    <!-- tail -->
+    <g fill="#e8edf2" stroke="#2b3440" stroke-width="4" stroke-linejoin="round">
+      <ellipse cx="278" cy="322" rx="44" ry="14" transform="rotate(-24,278,322)"/>
+      <ellipse cx="282" cy="304" rx="36" ry="12" transform="rotate(-44,282,304)"/>
+      <ellipse cx="276" cy="340" rx="36" ry="12" transform="rotate(-4,276,340)"/>
+    </g>
+
+    <!-- far wing -->
+    <path d="M 392 324 C 428 306 468 310 488 324 C 496 330 492 340 482 338
+             C 450 330 420 326 392 332 Z" fill="#d7dee6" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- far leg -->
+    <path d="M 350 372 L 334 398 L 350 408" fill="none" stroke="#e07b18"
+          stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 350 416 q -19 -3 -21 4 q 12 6 21 2 q 10 4 21 -2 q -3 -7 -21 -4 Z"
+          fill="#ef8a1c" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- body -->
+    <ellipse cx="372" cy="344" rx="62" ry="44" fill="#ffffff" stroke="#2b3440"
+             stroke-width="5"/>
+    <path d="M 326 378 q 46 22 92 0" fill="none" stroke="#dfe5ec" stroke-width="3"/>
+
+    <!-- near leg -->
+    <path d="M 396 384 L 416 424 L 384 452" fill="none" stroke="#f59320"
+          stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 384 460 q -20 -3 -22 4 q 12 7 22 3 q 10 4 22 -3 q -3 -8 -22 -4 Z"
+          fill="#f59a24" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- neck -->
+    <path d="M 418 330 C 434 300 444 284 458 272" fill="none" stroke="#2b3440"
+          stroke-width="28" stroke-linecap="round"/>
+    <path d="M 418 330 C 434 300 444 284 458 272" fill="none" stroke="#ffffff"
+          stroke-width="18" stroke-linecap="round"/>
+
+    <!-- head -->
+    <ellipse cx="474" cy="266" rx="28" ry="25" fill="#ffffff" stroke="#2b3440"
+             stroke-width="5"/>
+
+    <!-- helmet -->
+    <path d="M 444 262 C 444 232 464 214 486 214 C 508 214 522 230 522 250
+             L 524 254 L 444 262 Z" fill="#e05b3a" stroke="#2b3440" stroke-width="5"
+          stroke-linejoin="round"/>
+    <g fill="none" stroke="#2b3440" stroke-width="4" stroke-linecap="round">
+      <path d="M 462 218 L 470 254"/>
+      <path d="M 486 213 L 488 252"/>
+      <path d="M 508 222 L 506 250"/>
+    </g>
+    <path d="M 444 262 q 8 14 24 16" fill="none" stroke="#2b3440" stroke-width="5"
+          stroke-linecap="round"/>
+
+    <!-- eye -->
+    <circle cx="488" cy="270" r="7.5" fill="#ffffff" stroke="#2b3440" stroke-width="3.5"/>
+    <circle cx="489" cy="270" r="4.2" fill="#2b3440"/>
+    <circle cx="490.6" cy="268.4" r="1.5" fill="#ffffff"/>
+
+    <!-- upper mandible -->
+    <path d="M 498 264 C 536 257 578 260 604 268 C 614 272 610 281 598 279
+             C 564 278 528 274 498 272 Z" fill="#ff9f2e" stroke="#2b3440"
+          stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 506 268 C 540 263 576 265 596 271" fill="none" stroke="#ffd9a8"
+          stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="512" cy="266" rx="4" ry="2.2" fill="#c96a10"/>
+
+    <!-- gular pouch -->
+    <path d="M 498 272 C 528 283 558 295 584 306 C 594 310 597 319 588 320
+             C 579 322 567 315 555 307 C 531 293 512 282 496 276 Z"
+          fill="#f5791f" stroke="#2b3440" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 508 285 C 530 296 552 307 570 315" fill="none" stroke="#d05f12"
+          stroke-width="2" opacity="0.7"/>
+
+    <!-- fish -->
+    <g transform="translate(556 297) rotate(14)" stroke="#2b3440" stroke-width="3.5"
+       stroke-linejoin="round">
+      <path d="M 12 0 L 25 -8 L 25 8 Z" fill="#6fc3e8"/>
+      <ellipse cx="0" cy="0" rx="15" ry="7" fill="#9adcf5"/>
+      <circle cx="-7" cy="-1" r="1.8" fill="#2b3440" stroke="none"/>
+    </g>
+
+    <!-- near wing on the bar -->
+    <path d="M 400 326 C 434 314 482 320 512 336 C 524 343 518 353 508 351
+             C 474 343 434 336 400 340 Z" fill="#ffffff" stroke="#2b3440"
+          stroke-width="5" stroke-linejoin="round"/>
+    <g fill="none" stroke="#dfe5ec" stroke-width="3" stroke-linecap="round">
+      <path d="M 412 332 C 448 324 486 330 508 344"/>
+      <path d="M 414 339 C 448 332 484 338 506 349"/>
+    </g>
+  </g>
+
+  <!-- foreground grass -->
+  <g stroke="#5e8a55" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M 46 600 q 8 -26 20 -34"/>
+    <path d="M 66 600 q 16 -24 32 -30"/>
+    <path d="M 726 600 q -8 -26 -20 -34"/>
+    <path d="M 746 600 q -16 -24 -32 -30"/>
+  </g>
+</svg>
